@@ -4,8 +4,7 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "test": "node app.js",
-    "stop": "kill -9 $(ps -xaw|grep app|grep node| awk '{print $1}')"
+    "test": "test"
   },
   "repository": {
     "type": "git",
