@@ -6,3 +6,17 @@ export PATH=$PATH:/usr/local/node/bin
 source ~/.zshrc
 npm init
 npm install express --save
+touch app.js
+
+# add the following content inside the file app.js
+var express = require('express');
+var app = express();
+app.get('/', function (req, res) {
+  res.send('Hello World!');
+});
+app.listen(3000, function () {
+  console.log('Example app listening on port 3000!');
+});
+
+# run the command
+node app.js
